@@ -1,0 +1,197 @@
+*{
+  font-family: 'Helvetica', 'sans-serif';
+  padding: 0;
+  margin: 0;
+}
+
+/* MENGATUR TATA LETAK LOGO TUTWURI */
+.logo_tut{
+  float: left;
+  margin-top: 5px;
+  margin-left: 40px;
+}
+
+/* MENGATUR TATA LETAK LOGO BBPPMPV BOE */
+.logo_vedc{
+  float: right;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+/* MENGATUR TULISAN DEPARTEMEN TEKNOLOGI INFORMASI PADA BAR ATAS WEB */
+.pos_font{
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(95, 157, 159, 0.66);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+/* MENGATUR TULISAN DASHBOARD SISTEM MONITORING DAN CONTROLLING */
+.navigation{
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  margin: 10px;
+}
+
+/* MENGATUR TULISAN COPYRIGHT PADA BAGIAN BAWAH WEB */
+.copy{
+  text-align: center;
+  font-family: Gadugi;
+  margin-top: 5%;
+}
+
+/* MENGATUR FONT  TEXT STATUS */
+.gauge-card-1 h4{
+  font-size: 25px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  padding: 5px;
+  text-align: center;
+  color: #e1b48d;
+  font-family: "Agency FB";
+}
+
+/* MENGATUR FONT TEXT LAMP GARDEN, LAMP TERRACE, DAN LAMP ROOM PADA CARD STATUS */
+.gauge-container .gauge-card-1 .lamp{
+  font-size: 15px;
+  text-align: start;
+  color: #e1b48d;
+}
+
+
+/* GAUGE CARD */
+.gauge-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 10px;
+  min-height: 20%;
+  margin-top: 30px;
+  margin-right: 5.5px;
+  margin-left: 80px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* MENGATUR TATA LETAK CARD STATUS */
+.gauge-card-1{
+  background-color: rgba(7, 33, 82, 0.96);
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 80%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+/* MENGATUR TATA LETAK CARD PUSH BUTTON GARDEN */
+.main-card-1{
+  background-color: #344966;
+  grid-column: 1;       /* column ke berapa  */
+  grid-row: 1 / span 1; /* row ke berapa/ jumlah grid yang digunakan */
+  padding: 27px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 75%;
+  height: 82%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* MENGATUR TATA LETAK CARD PUSH BUTTON TERRACE */
+.main-card-2{
+  background-color: #344966;
+  grid-column: 1;
+  grid-row: 2 / span 1;
+  padding: 27px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 75%;
+  height: 82%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* MENGKONTROL BUTTON ON OFF */
+.button-container{
+  display: flex;
+  background: #b6e5e6;
+  border-radius: 15px;
+  margin-left: 120px;
+  margin-right: 70px;
+  width: 50%;
+  height: 70%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-row: 1 / span 1;
+  z-index: 1;
+}
+
+/* MENGATUR TEXT ON OFF */
+.button {
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 3px;
+  width: 70%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* MENGATUR BACKGROUND BUTTON ON */
+.button1 {background-color: #4CAF50;} /* Green */
+
+/* MENGATUR BACKGROUND BUTTON OFF */
+.button2 {background-color: #f44336;} /* Merah */
+
+
+
+/* MENGATUR RESPONSIVE JIKA WEB DILIHAT MENGGUNAKAN DEVICE LAIN */
+@media screen and (max-width: 800px) {
+   .gauge-container {
+     text-align: center;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
+     display: flex;
+     width: 100%;
+     margin: auto;
+  }
+
+  .gauge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .button-container{
+    margin: auto;
+  }
+
+  .navigation, .pos_font h1 {
+    text-align: center;
+  }
+
+  .logo_tut{
+    margin: auto;
+    position: relative;
+  }
+
+  .logo_vedc{
+    margin: auto;
+    position: relative;
+  }
+}
